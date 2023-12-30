@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wonderful wonders</title>
+    <link rel="stylesheet" href="style.css">
+    <!---we had linked our css file----->
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a class="icon" href='/home/student/Desktop/bootstrap-5.2.0-dist/css/carousel.html'>WONDERS OF THE WORLD</a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>list of wonders</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id='login-form' class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button' onclick='login()' class='toggle-btn'>Login Here</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text' class='input-field' placeholder='Email Id' required >
+		    <input type='password' class='input-field' placeholder='Enter Password' required>
+		    <input type='checkbox' class='check-box'><span>Remember Password</span>
+		 <a href="#/home/student/Desktop/bootstrap-5.2.0-dist/css/carousel.html"><button type='submit' class='submit-btn'>Login<button></a>
+		 </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var x=document.getElementById('login');
+		var z=document.getElementById('btn');
+		function login()
+		{
+			x.style.left='50px';
+			z.style.left='0px';
+		}
+	</script>
+</body>
+</html>
